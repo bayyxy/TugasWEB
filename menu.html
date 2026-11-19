@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Nusantara - Daftar Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="icon">🍲</span>
+                <h1>Warung Nusantara</h1>
+            </div>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="menu.html" class="active">Daftar Menu</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="menu-header">
+            <h2>Eksplorasi Rasa</h2>
+            <p>Pilih makanan dan minuman favorit Anda untuk hari ini.</p>
+        </div>
+
+        <!-- Tombol Filter -->
+        <div id="filter-buttons" class="filter-container">
+            <button onclick="filterMenu('semua')" class="btn-filter aktif" id="btn-semua">Semua Menu</button>
+            <button onclick="filterMenu('makanan')" class="btn-filter" id="btn-makanan">🍚 Makanan</button>
+            <button onclick="filterMenu('minuman')" class="btn-filter" id="btn-minuman">🥤 Minuman</button>
+        </div>
+
+        <!-- Container Menu Lokal -->
+        <div id="menu-container" class="menu-grid"></div>
+
+        <!-- =============================================
+             SECTION: MENU INTERNASIONAL DARI API EKSTERNAL
+             Source: TheMealDB API (themealdb.com)
+             ============================================= -->
+        <div class="api-section-divider">
+            <div class="api-divider-label">
+                <span class="api-dot"></span>
+                TheMealDB External API
+            </div>
+            <h2>🌍 Jelajahi Menu Internasional</h2>
+            <p>Data hidangan dari seluruh dunia, diambil langsung via API eksternal.</p>
+        </div>
+
+        <!-- Filter Kategori API -->
+        <div class="filter-container" id="filter-api">
+            <button onclick="fetchMenuAPI('Chicken')"    class="btn-filter btn-filter-api aktif-api" id="api-Chicken">🍗 Chicken</button>
+            <button onclick="fetchMenuAPI('Seafood')"    class="btn-filter btn-filter-api" id="api-Seafood">🦐 Seafood</button>
+            <button onclick="fetchMenuAPI('Beef')"       class="btn-filter btn-filter-api" id="api-Beef">🥩 Beef</button>
+            <button onclick="fetchMenuAPI('Pasta')"      class="btn-filter btn-filter-api" id="api-Pasta">🍝 Pasta</button>
+            <button onclick="fetchMenuAPI('Dessert')"    class="btn-filter btn-filter-api" id="api-Dessert">🍰 Dessert</button>
+            <button onclick="fetchMenuAPI('Vegetarian')" class="btn-filter btn-filter-api" id="api-Vegetarian">🥦 Vegetarian</button>
+        </div>
+
+        <!-- Container Menu API -->
+        <div id="menu-api-container" class="menu-grid">
+            <!-- Diisi oleh JavaScript via TheMealDB API -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Warung Nusantara. Dibuat dengan 🧡.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

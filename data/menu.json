@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Nasi Goreng Spesial",
+    "category": "makanan",
+    "price": 25000,
+    "desc": "Nasi goreng dengan bumbu rahasia, telur mata sapi, dan ayam suwir.",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Mie Goreng Jawa",
+    "category": "makanan",
+    "price": 22000,
+    "desc": "Mie goreng tradisional dengan sayuran segar dan udang rebon.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Ayam Bakar Madu",
+    "category": "makanan",
+    "price": 30000,
+    "desc": "Ayam bakar pilihan dengan olesan madu manis gurih + Nasi.",
+    "image": "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Sate Ayam Madura",
+    "category": "makanan",
+    "price": 28000,
+    "desc": "10 tusuk sate ayam dengan bumbu kacang kental khas nusantara.",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Rendang Daging",
+    "category": "makanan",
+    "price": 35000,
+    "desc": "Daging sapi empuk dengan bumbu rendang otentik rempah Padang.",
+    "image": "https://images.unsplash.com/photo-1627042633145-b780d842521e?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Es Teh Manis",
+    "category": "minuman",
+    "price": 5000,
+    "desc": "Teh melati seduh pilihan dengan gula asli dan es batu.",
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Es Jeruk Peras",
+    "category": "minuman",
+    "price": 8000,
+    "desc": "Jeruk peras segar, kaya vitamin C untuk kesegaran harian Anda.",
+    "image": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Kopi Susu Aren",
+    "category": "minuman",
+    "price": 15000,
+    "desc": "Kopi espresso asli dengan susu segar dan manisnya gula aren.",
+    "image": "https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=600&auto=format&fit=crop&q=80"
+  }
+]

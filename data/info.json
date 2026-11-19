@@ -1,0 +1,22 @@
+{
+  "name": "Warung Nusantara",
+  "tagline": "Cita Rasa Nusantara, Harga Sederhana",
+  "about": "Didirikan dengan penuh cinta pada tahun 2024, mengutamakan kebersihan, rasa, dan pelayanan ramah untuk setiap pelanggan.",
+  "founded_year": 2024,
+  "opening_hours": {
+    "weekday": {
+      "days": "Senin - Jumat",
+      "open": "08:00",
+      "close": "20:00"
+    },
+    "weekend": {
+      "days": "Sabtu - Minggu",
+      "open": "09:00",
+      "close": "21:00"
+    }
+  },
+  "contact": {
+    "phone": "+62 812-3456-7890",
+    "address": "Jl. Kuliner Tradisional No. 45, Indonesia"
+  }
+}

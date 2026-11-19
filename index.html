@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Nusantara - Beranda</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="icon">🍲</span>
+                <h1>Warung Nusantara</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Beranda</a>
+                <a href="menu.html">Daftar Menu</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Cita Rasa Nusantara,<br><span>Harga Sederhana</span></h2>
+                <p>Nikmati hidangan khas dengan resep warisan turun-temurun. Kami menyajikan yang terbaik untuk Anda setiap harinya.</p>
+                <a href="menu.html" class="btn-primary">Lihat Menu Kami</a>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <div class="icon-large">🏪</div>
+                <h3>Tentang Kami</h3>
+                <p>Didirikan dengan penuh cinta pada tahun 2024, mengutamakan kebersihan, rasa, dan pelayanan ramah untuk setiap pelanggan.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="icon-large">⏰</div>
+                <h3>Jam Operasional</h3>
+                <ul class="jam-list">
+                    <li><span>Senin - Jumat</span> <span>08.00 - 20.00</span></li>
+                    <li><span>Sabtu - Minggu</span> <span>09.00 - 21.00</span></li>
+                </ul>
+            </div>
+
+            <div class="info-card status-card">
+                <div class="icon-large">🔔</div>
+                <h3>Status Saat Ini</h3>
+                <div class="time-display">
+                    <span id="jam-sekarang">--:--:--</span>
+                </div>
+                <div id="status-warung" class="status-badge">Memeriksa status...</div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             SECTION: REKOMENDASI DARI API EKSTERNAL
+             Source: TheMealDB API (themealdb.com)
+             ============================================= -->
+        <section class="rekomendasi-section">
+            <div class="rekomendasi-header">
+                <div>
+                    <div class="api-label">
+                        <span class="api-dot"></span>
+                        Live dari TheMealDB API
+                    </div>
+                    <h2>🌍 Inspirasi Menu Dunia</h2>
+                    <p>Hidangan internasional pilihan acak yang diambil langsung dari API eksternal.</p>
+                </div>
+                <button class="btn-refresh" id="btn-refresh" onclick="fetchRekomendasi()">
+                    <span id="refresh-icon">🔄</span> Acak Lagi
+                </button>
+            </div>
+            <div id="rekomendasi-container" class="rekomendasi-grid">
+                <!-- Diisi oleh JavaScript via TheMealDB API -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Warung Nusantara. Dibuat dengan 🧡.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
